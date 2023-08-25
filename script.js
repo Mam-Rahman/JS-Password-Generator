@@ -118,7 +118,7 @@ function getPasswordOptions() {
     "Click OK to confirm including numeric characters"
   )
 
-  let hasLowerCaseCharacters = confirm(
+  let hasLowerCasedCharacters = confirm(
     "Click OK to confirm including lowercase characters"
   )
 
@@ -126,7 +126,13 @@ function getPasswordOptions() {
     "Click OK to confirm including uppercase characters"
   )  
 
-
+  if(hasLowerCasedCharacters === false &&
+    hasUpperCasedCharaters === false &&
+    hasSpecialCharacters === false &&
+    hasNumericCharacters === false) {
+      alert(`Must select at least one character type`);
+      return;
+  }
 
 
 }
