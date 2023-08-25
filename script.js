@@ -100,6 +100,19 @@ function getPasswordOptions() {
     return;
   }
 
+  if(length < 10) {
+    alert(`Password length must be at least 10 characters`);
+    return;
+  }
+
+  if(length > 65) {
+    alert(`Password length must be less than 65 characters`);
+    return;
+  }
+
+
+
+
 
 
 }
