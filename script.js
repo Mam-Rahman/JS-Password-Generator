@@ -134,6 +134,20 @@ function getPasswordOptions() {
       return;
   }
 
+  let passwordOptions = {
+    length: length,
+    hasSpecialCharacters: hasSpecialCharacters,
+    hasUpperCasedCharaters: hasUpperCasedCharaters,
+    hasLowerCasedCharacters: hasLowerCasedCharacters,
+    hasNumericCharacters: hasNumericCharacters 
+  }
+
+  console.log(passwordOptions);
+
+
+
+
+
 
 }
 
