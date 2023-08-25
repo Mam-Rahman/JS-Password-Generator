@@ -95,6 +95,11 @@ function getPasswordOptions() {
     prompt("How many characters would you like your password to contain?")
   )
 
+  if(isNaN(length) === true){
+    alert(`Password length must be provided as number`);
+    return;
+  }
+
 
 
 }
@@ -110,7 +115,7 @@ function getRandom(arr) {
 // Function to generate password with user input
 function generatePassword() {
   let options = getPasswordOptions();
-  
+
 }
 
 // Get references to the #generate element
