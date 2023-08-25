@@ -110,7 +110,21 @@ function getPasswordOptions() {
     return;
   }
 
+  let hasSpecialCharacters = confirm(
+    "Click OK to confirm including special characters"
+  )
 
+  let hasNumericCharacters = confirm(
+    "Click OK to confirm including numeric characters"
+  )
+
+  let hasLowerCaseCharacters = confirm(
+    "Click OK to confirm including lowercase characters"
+  )
+
+  let hasUpperCasedCharaters = confirm(
+    "Click OK to confirm including uppercase characters"
+  )  
 
 
 
