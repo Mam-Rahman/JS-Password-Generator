@@ -142,9 +142,6 @@ function getPasswordOptions() {
     hasNumericCharacters: hasNumericCharacters 
   }
 
-
-
-
   return passwordOptions;  
 
 }
@@ -161,12 +158,10 @@ function getRandom(arr) {
 function generatePassword() {
   let options = getPasswordOptions();
   console.log(options);
+  
   let result = []
 
-
-
   let possibleCharacter = []
-
 
   let guaranteedCharacter = []
 
@@ -175,10 +170,38 @@ function generatePassword() {
     possibleCharacter = possibleCharacter.concat(specialCharacters);
     guaranteedCharacter.push(getRandom(specialCharacters))
   }
+
+  if(options["hasLowerCasedCharacters"]) {
+    possibleCharacter = possibleCharacter.concat(lowerCasedCharacters);
+    guaranteedCharacter.push(getRandom(lowerCasedCharacters))
+  }
+
+  if(options.hasUpperCasedCharaters) {
+    possibleCharacter = possibleCharacter.concat(upperCasedCharacters);
+    guaranteedCharacter.push(getRandom(upperCasedCharacters))
+  }
+
+  if(options.hasNumericCharacters) {
+    possibleCharacter = possibleCharacter.concat(numericCharacters);
+    guaranteedCharacter.push(getRandom(numericCharacters))
+  }
+  
   console.log(possibleCharacter);
-  console.log(guaranteedCharacter);
 
 
+  for(let index = 0; index < options.length; index++){
+    var generated = getRandom(possibleCharacter);
+    console.log(generated);
+    result.push(generated);
+  }
+
+  for(let index = 0; index < guaranteedCharacter.length; index++) {
+    result[index] = guaranteedCharacter[index]
+  }
+  
+  console.log(result);
+
+  return result.join("")
 
 }
 
