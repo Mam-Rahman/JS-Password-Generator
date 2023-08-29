@@ -9,7 +9,8 @@ The core functionality of the application revolves around the generation of rand
 ## Technical Details:
 **Randomization:** The application employs a secure randomization process to ensure the unpredictability and strength of generated passwords.
 
-
+## Screenshot
+![screenshot of index.html](./assets/images/screenshot.png)
 
 ## Usage:
 1. Access the application using a compatible web browser by navigating to the provided URL.
@@ -24,3 +25,6 @@ The core functionality of the application revolves around the generation of rand
 
 ## Conclusion:
 The Random Password Generator application offers users a convenient and secure means of generating random passwords aligned with their specified criteria. Its utilization of modern web technologies ensures a smooth and responsive user experience, making it an invaluable tool for individuals seeking robust password solutions.
+ 
+ ## License
+ MIT License
